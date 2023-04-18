@@ -14,7 +14,7 @@ import CircularProgressGreen from './CircularProgressGreen';
 
 export default function ProgressionMap() {
     return <div className='containerDiv'>
-        <h1>Welcome back, Alex!</h1>
+        <h1><strong>Welcome back, Alex!</strong></h1>
         <div className='gridContainerDiv'>
             <Container fluid="md">
             <Row>
@@ -50,7 +50,7 @@ export default function ProgressionMap() {
             <Row>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
-                        <GiUpgrade className='icon'/><span><h3 className='sectionHeader'>Level</h3></span>
+                        <GiUpgrade className='icon'/><span><h3 className='sectionHeader'><strong>Level</strong></h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
                     <p style={{textAlign: "left"}}>You're just <strong style={{color: "#3620BE"}}>750 points away</strong> from leveling up!</p>
@@ -59,7 +59,7 @@ export default function ProgressionMap() {
                 </Col>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
-                        <FaAward className='icon'/><span><h3 className='sectionHeader'>Daily Points</h3></span>
+                        <FaAward className='icon'/><span><h3 className='sectionHeader'><strong>Daily Points</strong></h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
                     <p style={{textAlign: "left"}}>You only need <strong style={{color: "#D65354"}}>375 more points</strong> to hit your daily target! Keep it up!</p>
@@ -67,7 +67,7 @@ export default function ProgressionMap() {
                 </Col>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
-                        <BsFillCalendarWeekFill className='icon'/><span><h3 className='sectionHeader'>Exercises</h3></span>
+                        <BsFillCalendarWeekFill className='icon'/><span><h3 className='sectionHeader'><strong>Exercises</strong></h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
                     <p style={{textAlign: "left"}}>Just <strong style={{color: "#1F4027"}}>3 more days to go</strong> to meet your weekly target!</p>
@@ -77,7 +77,7 @@ export default function ProgressionMap() {
             <Row>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
-                        <BsEmojiSmile className='icon'/><span><h3 className='sectionHeader'>Mood</h3></span>
+                        <BsEmojiSmile className='icon'/><span><h3 className='sectionHeader'><strong>Mood</strong></h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
@@ -87,7 +87,7 @@ export default function ProgressionMap() {
                 </Col>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
-                        <TbStethoscope className='icon'/><span><h3 className='sectionHeader'>Symptoms</h3></span>
+                        <TbStethoscope className='icon'/><span><h3 className='sectionHeader'><strong>Symptoms</strong></h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
@@ -96,11 +96,11 @@ export default function ProgressionMap() {
                 </Col>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
-                        <MdWaterDrop className='smallIcon'/><span><h5 className='sectionHeader'>Water Intake: 32oz</h5></span>
+                        <MdWaterDrop className='smallIcon'/><span><h5 className='sectionHeader'><strong>Water Intake:</strong> 32oz</h5></span>
                     </div>
                     <hr style={{width: "90%"}}/>
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
-                        <BsClockFill className='smallIcon'/><span><h5 className='sectionHeader'>Sleep: 8.25hrs</h5></span>
+                        <BsClockFill className='smallIcon'/><span><h5 className='sectionHeader'><strong>Sleep:</strong> 8.25hrs</h5></span>
                     </div>
                     <MdAddCircle style={{marginLeft:"250px"}} className='icon'/>
                     
