@@ -1,3 +1,11 @@
+import Card from 'react-bootstrap/Card'
+import ListGroup from 'react-bootstrap/ListGroup'
+import Setting from '../components/Setting'
+
 export default function Settings() {
-    return <h1>Settings</h1>
+    return <>
+   <Setting></Setting>
+    
+    
+    </>
 }

@@ -9,6 +9,8 @@ import DailyChallenges from "./pages/DailyChallenges";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Settings from "./pages/Settings";
+import NotFound from './pages/NotFound';
+import AboutUs from './pages/AboutUs';
 
 function App() {
     return (
@@ -23,6 +25,10 @@ function App() {
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/register" element={<Register/>}/>
                     <Route path="/settings" element={<Settings/>}/>
+                    <Route path="/settings" element={<Settings/>}/>
+                    <Route path="*" element={<NotFound/>}/>
+                    <Route path="/aboutus" element={<AboutUs/>}/>
+
                 </Routes>
             </div>
         </>
