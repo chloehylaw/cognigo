@@ -8,7 +8,9 @@ import { GiUpgrade } from 'react-icons/gi';
 import { BsEmojiSmile } from 'react-icons/bs';
 import { MdWaterDrop, MdAddCircle } from 'react-icons/md';
 import { TbStethoscope } from 'react-icons/tb';
-import { CircularProgress } from '@mui/material';
+import CircularProgressPurple from './CircularProgressPurple';
+import CircularProgressOrange from './CircularProgressOrange';
+import CircularProgressGreen from './CircularProgressGreen';
 
 export default function ProgressionMap() {
     return <div className='containerDiv'>
@@ -35,7 +37,7 @@ export default function ProgressionMap() {
             <Row>
                 <Col className="dashSection">
                     <div className="profileInfo" style={{ textAlign: "left"}}>
-                    <h3><strong>Goals:</strong></h3>
+                    <h3><strong>My Goals:</strong></h3>
                     <hr style={{width: "80%"}}/>
                     <ul>
                         <li><strong>Remembering daily appointments and events:</strong> I want to work on techniques for remembering important dates, appointments, and tasks, such as using a calendar, setting reminders on their phone, or using a memory aid like a whiteboard or sticky notes.</li>
@@ -51,19 +53,25 @@ export default function ProgressionMap() {
                         <GiUpgrade className='icon'/><span><h3 className='sectionHeader'>Level</h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
-                    <CircularProgress variant="determinate" value={75} />
+                    <p style={{textAlign: "left"}}>You're just <strong style={{color: "#3620BE"}}>750 points away</strong> from leveling up!</p>
+                    <div style={{height: "250px"}}><CircularProgressPurple/></div>
+                    
                 </Col>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
                         <FaAward className='icon'/><span><h3 className='sectionHeader'>Daily Points</h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
+                    <p style={{textAlign: "left"}}>You only need <strong style={{color: "#D65354"}}>375 more points</strong> to hit your daily target! Keep it up!</p>
+                    <div style={{height: "250px"}}><CircularProgressOrange/></div>
                 </Col>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
-                        <BsFillCalendarWeekFill className='icon'/><span><h3 className='sectionHeader'>Weekly Logins</h3></span>
+                        <BsFillCalendarWeekFill className='icon'/><span><h3 className='sectionHeader'>Exercises</h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
+                    <p style={{textAlign: "left"}}>Just <strong style={{color: "#1F4027"}}>3 more days to go</strong> to meet your weekly target!</p>
+                    <div style={{height: "250px"}}><CircularProgressGreen/></div>
                 </Col>
             </Row>
             <Row>
@@ -72,12 +80,19 @@ export default function ProgressionMap() {
                         <BsEmojiSmile className='icon'/><span><h3 className='sectionHeader'>Mood</h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
+                    <div className="dashSectionHeader" style={{ textAlign: "left"}}>
+                        <span><p style={{textAlign: "left"}}>How are you feeling today?</p></span><MdAddCircle style={{marginLeft:"10px"}} className='icon'/>
+                    </div>
+
                 </Col>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
                         <TbStethoscope className='icon'/><span><h3 className='sectionHeader'>Symptoms</h3></span>
                     </div>
                     <hr style={{width: "90%"}}/>
+                    <div className="dashSectionHeader" style={{ textAlign: "left"}}>
+                        <span><p style={{textAlign: "left"}}>Report any negative symptoms</p></span><MdAddCircle style={{marginLeft:"10px"}} className='icon'/>
+                    </div>
                 </Col>
                 <Col className="dashSection">
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
@@ -87,6 +102,8 @@ export default function ProgressionMap() {
                     <div className="dashSectionHeader" style={{ textAlign: "left"}}>
                         <BsClockFill className='smallIcon'/><span><h5 className='sectionHeader'>Sleep: 8.25hrs</h5></span>
                     </div>
+                    <MdAddCircle style={{marginLeft:"250px"}} className='icon'/>
+                    
                 </Col>
             </Row>
             </Container>
