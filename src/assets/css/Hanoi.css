@@ -1,0 +1,117 @@
+h1 {
+    text-align: left;
+    margin-bottom: 3%;   
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 3%;   
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: 3%;   
+}
+
+h4.objective {
+    text-align: left;
+    margin-bottom: 3%;   
+    display: inline;
+}
+
+.instructions {
+    text-align: left;
+}
+
+#back-button-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.back-button {
+    width: 75px;
+    height: 50px;
+}
+
+#reset-button-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.reset-button {
+    width: 75px;
+    height: 50px;
+}
+
+.text-title {
+    font-weight: 700;
+  }
+  
+.content {
+    border: 1px solid grey;
+    display: inline-flex;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+}
+
+.column-container {
+    align-items: flex-end;
+    background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    border: 1px solid darkgrey;
+    border-radius: 25px;
+    height: 80vh;
+    position: relative;
+    width: 30%;
+}
+
+.center-bar {
+    background-color: brown;
+    width: 4%;
+    height: 100%;
+    border: 1px solid grey;
+    position: absolute;
+    left: 48%;
+    z-index: -1;
+}
+
+.tile {
+    /* background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25)); */
+    background-color: burlywood;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40px;
+    margin: auto;
+    z-index: 10;
+    /* box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
+}
+
+.win-message {
+    background-color: #080;
+    border-radius: 10px;
+    color: #ff0;
+    font-size: 42px;
+    font-weight: 700;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    z-index: 20;
+}
+
+.win-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.win-number {
+    color: #2ff;
+}
