@@ -10,12 +10,12 @@ import {BsFill1CircleFill,BsFill2CircleFill, BsFill3CircleFill } from 'react-ico
 
 export default function AboutUs() {
     return <Container>
-        <h2> What are we?</h2>
+        <h2 style={{textAlign:'center'}}> What are we?</h2>
         <p> We are a Company that wishes to enhance the traditional means of cognitive rehabilitation therapy, we do this by using a gamefied approach to better increase your skills in memory, attention, visual spatial reasoning and language. As well, with a customizable interface, you can change the way this whole app looks to better your experience.</p>
-        <h2 style={{marginTop:'1em'}}> Why did we do this?</h2>
+        <h2 style={{marginTop:'1em', textAlign:'center'}}> Why did we do this?</h2>
         <p> We felt that patients who had cognitive impariements didn't have the best means to get better given the current system being slow and unmotivating. So we felt with our method, that users could stay motivated and get better from the comfort of their homes.  </p>
         <Row>
-            <h2 style={{marginTop:'1em', marginBottom:'1em'}}>The engineers behind this app</h2>
+            <h2 style={{marginTop:'1em', marginBottom:'1em', textAlign:'center'}}>The engineers behind this app</h2>
             <Col>Zachary Bruce</Col>
             <Col>Victoria Castelli</Col>
             <Col>Maxime Joanisse</Col>

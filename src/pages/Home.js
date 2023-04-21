@@ -33,7 +33,7 @@ export default function Home() {
                 <Col style={{textAlign:'left'}}><BsFill3CircleFill style={{fontSize:'300%', marginBottom:'0.2em'}}></BsFill3CircleFill><h3>Check your progession</h3> <p style={{opacity:0.85}}>By doing the games and daily challenges, you will be able to see how much you improved in your skill overtime!</p></Col>
             </Row>
 
-        <h2 style={{marginBottom:'1em'}}>With us You can be treated to improve your</h2>
+        <h2 style={{marginBottom:'1em'}}>With us you can be treated to improve your</h2>
         <Row>
         <Col><Card >
         <Card.Img className='home' variant="top" src={memory} />
