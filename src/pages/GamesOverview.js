@@ -9,6 +9,8 @@ import { MdWaterDrop, MdAddCircle } from 'react-icons/md';
 import { TbStethoscope } from 'react-icons/tb';
 
 import imgTowerofhanoi from '../images/imgTowerofhanoi.webp';
+import imgCardMemory from '../images/imgCardMemory.png';
+
 
 
 
@@ -27,11 +29,15 @@ export default function GamesOverview() {
                 <Row>
                     <Col className="dashSection">
                         <div className="dashSectionHeader" style={{ textAlign: "left" }}>
-                            <GiUpgrade className='icon' /><span><h3 className='sectionHeader'><strong>Tower of Hanoi</strong></h3></span>
+                            <span><h3 className='sectionHeader'><strong>Tower of Hanoi</strong></h3></span>
+                            <Button href="/games/hanoi" variant="warning" size="lg" style={{ margin: "5px" }}>Play</Button>
                         </div>
                         <hr style={{ width: "90%" }} />
                         <p style={{ textAlign: "left" }}>The Tower of Hanoi is a classic game of logical thinking and sequential reasoning.
-                            Move rings from one tower to another but make sure you follow the rules! <strong style={{ color: "#3620BE" }}>Rules:</strong>
+                            Move rings from one tower to another but make sure you follow the rules!
+                        </p>
+                        <p style={{ textAlign: "left" }}>
+                            <strong style={{ color: "#3620BE" }}>Rules:</strong>
                             <ul>
                                 <li>
                                     Only the topmost ring on a pile can be moved each time.
@@ -41,18 +47,31 @@ export default function GamesOverview() {
                                 </li>
                             </ul>
                         </p>
-                        <div style={{ flex: "1 0 5%" }}>
+                        <div class="gamePreviewImg">
                             <img src={imgTowerofhanoi} alt="towerofhanoi" />
                         </div>
-                        <Button href="/games/hanoi/go" variant="warning" size="lg" style={{ margin: "5px" }}>Play</Button>
                     </Col>
                     <Col className="dashSection">
                         <div className="dashSectionHeader" style={{ textAlign: "left" }}>
-                            <FaAward className='icon' /><span><h3 className='sectionHeader'><strong>Daily Points</strong></h3></span>
+                            <span><h3 className='sectionHeader'><strong>Card Match</strong></h3></span>
+                            <Button href="/games/card-memory/go" variant="warning" size="lg" style={{ margin: "5px" }}>Play</Button>
                         </div>
                         <hr style={{ width: "90%" }} />
-                        <p style={{ textAlign: "left" }}>You only need <strong style={{ color: "#D65354" }}>375 more points</strong> to hit your daily target! Keep it up!</p>
+                        <p style={{ textAlign: "left" }}>Good for practising short term memory</p>
+                        <p style={{ textAlign: "left" }}>
+                            <strong style={{ color: "#3620BE" }}>Rules:</strong>
+                            <ul>
+                                <li>
+                                    Flip the cards and match the tiles together in pairs
+                                </li>
+                            </ul>
+                        </p>
+
+                        <div class="gamePreviewImg">
+                            <img src={imgCardMemory} alt="imgCardMemory" />
+                        </div>
                     </Col>
+
                     <Col className="dashSection">
                         <div className="dashSectionHeader" style={{ textAlign: "left" }}>
                             <BsFillCalendarWeekFill className='icon' /><span><h3 className='sectionHeader'><strong>Exercises</strong></h3></span>
