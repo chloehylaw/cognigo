@@ -25,9 +25,9 @@ export default function Register() {
     return (
         <div className="container-signin">
             <section className="wrapper">
-                <div className="heading">
-                    <h1>Register</h1>
-                    <p>Already a user? <span><a href="/Login">Login</a> </span></p>
+            <div className="dashSection" style={{padding: "1em"}}>
+                <div className="heading" style={{textAlign: "center"}}>
+                    <h1 style={{textAlign: "center", marginTop:"1em", marginBottom: "1em"}}><strong>Register</strong></h1>
                 </div>
                 <form onSubmit={register}>
                     <div className="input-control">
@@ -39,7 +39,9 @@ export default function Register() {
                                onChange={(e) => setPassword(e.target.value)} className="input-field"></input>
                     </div>
                     <button type="submit" name="submit" className="input-submit" value="Sign in">Submit</button>
+                    <p>Already a user? <span><a href="/Login">Login</a> </span></p>
                 </form>
+            </div>
             </section>
         </div>
     )

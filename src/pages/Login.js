@@ -26,21 +26,23 @@ export default function Login() {
     return (
         <div className="container-signin">
             <section className="wrapper">
-                <div className="heading">
-                    <h1>Login</h1>
-                    <p>New user? <span><a href="/Register">Create an account</a> </span></p>
+                <div className="dashSection" style={{padding: "1.5em"}}>
+                    <div className="heading" style={{textAlign: "center"}}>
+                        <h1 style={{textAlign: "center", marginTop:"1em", marginBottom: "1em"}}><strong>Login</strong></h1>
+                    </div>
+                    <form onSubmit={login}>
+                        <div className="input-control">
+                            <input type="email" placeholder="Enter your email" value={email}
+                                onChange={(e) => setEmail(e.target.value)} className="input-field"></input>
+                        </div>
+                        <div className="input-control">
+                            <input type="password" placeholder="Enter your password" value={password}
+                                onChange={(e) => setPassword(e.target.value)} className="input-field"></input>
+                        </div>
+                        <button type="submit" name="submit" className="input-submit" value="Sign in">Login</button>
+                        <p>New user? <span><a href="/Register">Create an account</a> </span></p>
+                    </form>
                 </div>
-                <form onSubmit={login}>
-                    <div className="input-control">
-                        <input type="email" placeholder="Enter your email" value={email}
-                               onChange={(e) => setEmail(e.target.value)} className="input-field"></input>
-                    </div>
-                    <div className="input-control">
-                        <input type="password" placeholder="Enter your password" value={password}
-                               onChange={(e) => setPassword(e.target.value)} className="input-field"></input>
-                    </div>
-                    <button type="submit" name="submit" className="input-submit" value="Sign in">Login</button>
-                </form>
             </section>
         </div>
     )
