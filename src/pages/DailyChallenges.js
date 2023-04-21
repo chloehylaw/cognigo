@@ -27,6 +27,7 @@ import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import React, { useState, useEffect, useRef } from "react";
 import IconButton from "@mui/material/IconButton";
 import { AiFillStar } from "react-icons/ai";
+import imgTowerofhanoi from '../images/imgTowerofhanoi.webp';
 
 function createData(day, status, replay) {
   return { day, status, replay };
@@ -331,7 +332,7 @@ export default function DailyChallenges() {
               </div>
               <hr style={{ width: "90%" }} />
               <div style={{ height: "250px" }}>
-                <img src={crossword} style={{ width: 200, height: 200 }}></img>
+                <img src={imgTowerofhanoi} style={{ width: 200, height: 200 }}></img>
               </div>
               <div>
                 <Button
