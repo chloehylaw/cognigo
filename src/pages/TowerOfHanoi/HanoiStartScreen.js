@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import '../../assets/css/Hanoi.css'
 import { Row, Col, Button } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
+import '../index.css'
+import '../../assets/css/Hanoi.css'
 
 
 function HanoiStartScreen() {
@@ -30,18 +31,18 @@ function HanoiStartScreen() {
         </h2>
       </Row>
       <Row className="difficulty-button-row">
-        <h1>Select a difficulty</h1>
+        <h1>Select a difficulty:</h1>
         <Col>
-          <Button onClick={() => start('easy')}>Easy</Button>
+          <Button className="input-submit" onClick={() => start('easy')}>Easy</Button>
         </Col>
         <Col>
-          <Button onClick={() => start('medium')}>Medium</Button>
+          <Button className="input-submit" onClick={() => start('medium')}>Medium</Button>
         </Col>
         <Col>
-          <Button onClick={() => start('hard')}>Hard</Button>
+          <Button className="input-submit" onClick={() => start('hard')}>Hard</Button>
         </Col>
         <Col>
-          <Button onClick={() => start('very_hard')}>Very Hard</Button>
+          <Button className="input-submit" onClick={() => start('very_hard')}>Very Hard</Button>
         </Col>
       </Row>
     </>
