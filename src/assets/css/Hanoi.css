@@ -1,0 +1,137 @@
+h1 {
+    text-align: left;
+    margin-bottom: 3%;   
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 3%;   
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: 3%;   
+}
+
+h4.objective {
+    text-align: left;
+    margin-bottom: 3%;   
+    display: inline;
+}
+
+.instructions {
+    text-align: left;
+}
+
+#back-button-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.game-button {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    padding: 0.65rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    color: white;
+    background: #202124;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    margin-bottom: 20px;
+}
+
+.game-button:hover {
+    background: rgb(133, 132, 132);
+    text-decoration: none;
+    color: white;
+}
+
+#reset-button-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.text-title {
+    font-weight: 700;
+}
+
+.hanoi-game-container {
+    background-color:#3F6249;
+    padding: 3%;
+    border-radius: 20px;
+    z-index: -30;
+}
+
+.hanoi-game-window {
+    display: inline-flex;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    z-index: 0;
+}
+
+.hanoi-column {
+    align-items: flex-end;
+    background-color:white;
+    border: 1px solid darkgrey;
+    border-radius: 25px;
+    height: 60vh;
+    position: relative;
+    width: 30%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    z-index: 0;
+}
+
+.center-bar {
+    background-color: black;
+    width: 4%;
+    height: 100%;
+    border: 1px solid grey;
+    position: absolute;
+    left: 48%;
+    z-index: -1;
+}
+
+.tile {
+    background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+    background-color: #D65354;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40px;
+    margin: auto;
+    z-index: 10;
+}
+
+.win-message {
+    background-color: #1F4027;
+    border-radius: 20px;
+    border: 2px solid #202124;
+    color: wheat;
+    font-size: 42px;
+    font-weight: 700;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    z-index: 20;
+    box-shadow: rgba(15, 25, 60, 0.2) 3px 3px 6px 10px, rgba(0, 0, 0, 0.1) -3px -3px 6px 10px;
+}
+
+.win-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.win-number {
+    color: yellow;
+}
