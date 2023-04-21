@@ -9,6 +9,8 @@ import DailyChallenges from "./pages/DailyChallenges";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Settings from "./pages/Settings";
+import TowerOfHanoi from './pages/TowerOfHanoi/TowerOfHanoi';
+import HanoiStartScreen from './pages/TowerOfHanoi/HanoiStartScreen';
 
 function App() {
     return (
@@ -23,6 +25,8 @@ function App() {
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/register" element={<Register/>}/>
                     <Route path="/settings" element={<Settings/>}/>
+                    <Route path="/games/hanoi/go" element={<TowerOfHanoi/>}/>
+                    <Route path="/games/hanoi" element={<HanoiStartScreen/>}/>
                 </Routes>
             </div>
         </>
