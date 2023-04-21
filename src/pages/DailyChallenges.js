@@ -118,6 +118,7 @@ export default function DailyChallenges() {
                     REMAINING
                   </Button>
                 </div>
+                <hr style={{width: "80%"}}/>
                 <BsFire className="icon" color="red" />
                 <span>
                   You're on a roll! You've completed{" "}
@@ -126,6 +127,7 @@ export default function DailyChallenges() {
                   </strong>{" "}
                   this week. Keep it up!
                 </span>
+                <hr style={{width: "80%"}}/>
                 <TableContainer component={Paper}>
                   <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
@@ -179,7 +181,7 @@ export default function DailyChallenges() {
                   }}
                 >
                   <h3>
-                    <strong>Here's your daily challenges:</strong>
+                    <strong>Here are your daily challenges:</strong>
                   </h3>
                   <div style={{ display: "flex", alignItems: "center" }}>
                     <AiFillStar
@@ -203,7 +205,7 @@ export default function DailyChallenges() {
                         style={{
                           width: `${33}%`,
                           height: "100%",
-                          backgroundColor: "#007bff",
+                          backgroundColor: "#A6EB99",
                           borderRadius: "15px",
                         }}
                       ></div>
